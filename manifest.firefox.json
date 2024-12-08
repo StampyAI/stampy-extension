@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Stampy Analysis",
+  "version": "1.0",
+  "description": "Analyze selected text using Stampy AI",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "<all_urls>",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["src/background.js"],
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "src/options/options.html",
+    "browser_style": true
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "stampy-analysis@example.com"
+    }
+  }
+} 

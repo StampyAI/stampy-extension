@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Stampy Analysis",
+  "version": "1.0",
+  "description": "Analyze selected text using Stampy AI",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "options_ui": {
+    "page": "src/options/options.html"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  }
+} 
